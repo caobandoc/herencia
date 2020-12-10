@@ -12,7 +12,8 @@ public class PersonaManager {
 	}
 	
 	public void insertarPersona(Persona persona) {
-		serv.insertar(persona);
+		ServicioPersona aux = new ServicioPersonaArchivos();
+		aux.insertar(persona);
 	}
 	
 	public void actualizarPersona(Persona persona) {
